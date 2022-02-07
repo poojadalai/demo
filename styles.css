@@ -27,18 +27,17 @@ html {
     overflow: hidden;
     cursor: pointer;
   }
-  .collapase-element{
+  .collapasible, .collapase-element{
     background-color: #ebedea;
     padding: 15px;
     border: none;
     font-size: 16px;
     text-align: center;
   }
-
   .hide{
     display: none;
+    transition: all 5s;
   }
-
   .hide.visible{
     display: block;
   }

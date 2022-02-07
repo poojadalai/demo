@@ -1,14 +1,13 @@
-const toggleBtn = document.querySelector('button');
-const div = document.querySelector('.hide');
+const collapsibles = document.querySelectorAll('.collapasible');
 
-toggleBtn.addEventListener('click', function(){
-   
-    // if(div.style.display === "none"){
-    //     div.style.display = "block";
-       
-    // }else{
-    //     div.style.display = "none";
-    // }
+    for(let i = 0; i < collapsibles.length; i++){
+        let collapsible = collapsibles[i];
 
-    div.classList.toggle("visible");
-});
+        collapsible.addEventListener('click', function(){
+        
+        const collapsibleContent = collapsible.nextElementSibling;
+        collapsibleContent.classList.toggle("visible");
+        });
+    }
+
+  
